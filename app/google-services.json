@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1009053650785",
+    "firebase_url": "https://trivia-f470d.firebaseio.com",
+    "project_id": "trivia-f470d",
+    "storage_bucket": "trivia-f470d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009053650785:android:3d55f80d860fad04",
+        "android_client_info": {
+          "package_name": "jurrians.trivia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009053650785-2jdqhcdsqotcgkir09b5kbuotqotmglt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jurrians.trivia",
+            "certificate_hash": "a6bfbbce1026c54e15c2d59680c58919adaa3942"
+          }
+        },
+        {
+          "client_id": "1009053650785-j237pu9ecf2326vrn6gbgrql8h7qm92o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5j0Ec9m90ZjdMOEx6c2nxZXAW9HwBO64"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009053650785-j237pu9ecf2326vrn6gbgrql8h7qm92o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
