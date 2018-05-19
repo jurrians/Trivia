@@ -4,15 +4,290 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/NoActionBar"
     tools:context=".GameActivity">
 
+    <ImageView
+        android:id="@+id/blackBox1"
+        android:layout_width="360dp"
+        android:layout_height="185dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/black_box" />
+
     <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/heart1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox1"
+        app:layout_constraintEnd_toStartOf="@+id/heart2"
+        app:srcCompat="@drawable/black_heart2" />
+
+    <ImageView
+        android:id="@+id/heart2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox1"
+        app:layout_constraintEnd_toStartOf="@+id/heart3"
+        app:srcCompat="@drawable/black_heart2" />
+
+    <ImageView
+        android:id="@+id/heart3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_heart2" />
+
+    <ImageView
+        android:id="@+id/blackBox2"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_box" />
+
+    <ImageView
+        android:id="@+id/blackBox3"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_box" />
+
+    <ImageView
+        android:id="@+id/blackBox4"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_box" />
+
+    <ImageView
+        android:id="@+id/blackBox5"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_box" />
+
+    <TextView
+        android:id="@+id/textScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="14dp"
+        android:layout_marginStart="16dp"
+        android:text="Score:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textScoreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox1"
+        app:layout_constraintStart_toEndOf="@+id/textScore" />
+
+    <TextView
+        android:id="@+id/textA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:text="A"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/blackBox2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:text="B"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/blackBox3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:text="C"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/blackBox4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="24dp"
+        android:text="D"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textOptionA"
+        android:layout_width="292dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="onOptionClick"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textOptionB"
+        android:layout_width="292dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="onOptionClick"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textOptionC"
+        android:layout_width="292dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="onOptionClick"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textOptionD"
+        android:layout_width="292dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="onOptionClick"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="onOptionClick"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="onOptionClick"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="onOptionClick"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/blackBox5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="onOptionClick"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
